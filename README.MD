@@ -2,5 +2,4 @@
 
 В этом проекте я работала с адаптивом для разных разрешений экрана, темными и светлыми темами. Использовала гриды/флексы.
 
-**Ссылка на проект:** https://github.com/VarvaraBerast/slozhno-sosredotochitsya-fd.git
-
+**Ссылка на проект:** https://github.com/VarvaraBerast/slozhno-sosredotochitsya-fd.git 
