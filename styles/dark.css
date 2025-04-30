@@ -65,8 +65,3 @@
   outline: 1px solid var(--accent-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  .header__theme-menu-button_type_dark {
-    outline: none;
-  }
-}
