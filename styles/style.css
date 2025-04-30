@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
-  padding: 10px;
+  padding: var(--padding-sides);
   height: 100vh;
   min-height: 668px;
 }
@@ -29,7 +29,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   list-style-type: none;
   align-items: center;
   justify-content: center;
@@ -45,12 +45,21 @@
   line-height: 100%;
   color: var(--accent-color);
 }
-
-.header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
+.header__theme-menu-button:active {
+  outline: 1px solid var(--accent-color);
   padding: 0px 25px;
   width: 110px;
   height: 30px;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
+  padding: 0px 25px;
+  width: 110px;
+  height: 30px;
+}
+.header__theme-menu-button_active {
+  pointer-events: none;
 }
 
 .header__theme-menu-button:focus {
@@ -61,12 +70,14 @@
   text-decoration: underline;
   text-decoration-color: var(--accent-color);
   text-underline-offset: 2px;
+  text-decoration-skip-ink: none;
 }
 
 .header__theme-menu-button_type_dark {
-  border: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color);
+  padding: 0px 13px;
   width: 70px;
-  height: 26px;
+  height: 23px;
 }
 
 .header__rec {
@@ -152,6 +163,7 @@
 .title-decor,
 .title-decoration {
   background-color: var(--accent-color);
+  width: 100%;
 }
 
 .title-no-decor {
@@ -210,6 +222,7 @@
 }
 
 .gallery__img {
+  object-position: center;
   object-fit: cover;
   display: block;
   width: 100%;
@@ -221,6 +234,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .footer__title {
@@ -253,21 +267,12 @@
 }
 
 @media (min-width: 768px) {
-  :root {
-    --padding-content: 60px;
-    --padding-sides: 20px;
-    --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --margin-block-end: 80px;
-    --margin-position-absolut: 20px;
-  }
-
   .page {
     max-inline-size: 768px;
   }
 
   .header {
     min-height: 1024px;
-    padding: var(--padding-sides);
   }
 
   .header__title {
@@ -342,7 +347,7 @@
     height: 100%;
     width: 100%;
   }
-  
+
   .footer {
     min-height: 1024px;
   }

@@ -14,7 +14,6 @@
   --font-weight-normal: 400;
   --text-font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --header-margin: 40px;
   --margin-block-end: 50px;
   --margin-block-end-gallery: 40px;
   --padding-content: 40px;
@@ -29,5 +28,5 @@
     --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --margin-block-end: 80px;
     --margin-position-absolut: 20px;
-  } 
+  }
 }

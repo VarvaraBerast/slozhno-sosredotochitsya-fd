@@ -19,7 +19,7 @@
 }
 
 .theme-dark .header__theme-menu-button_type_dark {
-  border: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color);
 }
 
 .theme-dark .header__theme-menu-button_type_auto {
@@ -50,7 +50,7 @@
 }
 
 .theme-dark .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
+  outline: 1px solid rgba(255, 0, 112, 0.4);
 }
 
 .theme-dark .header__theme-menu-button:focus {
@@ -58,6 +58,15 @@
 }
 
 .theme-dark .header__theme-menu-button:focus-visible {
-  text-decoration: underline;
   text-decoration-color: var(--text-color);
+}
+
+.theme-dark .header__theme-menu-button:active {
+  outline: 1px solid var(--accent-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .header__theme-menu-button_type_dark {
+    outline: none;
+  }
 }
