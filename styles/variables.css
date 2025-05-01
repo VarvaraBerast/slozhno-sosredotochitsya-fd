@@ -18,7 +18,16 @@
   --margin-block-end-gallery: 40px;
   --padding-content: 40px;
   --padding-sides: 10px;
+  --header-rec-top: 10px;
+  --header-rec-right: 38px;
   --margin-position-absolut: 10px;
+  --outline-hover-button: rgba(255, 0, 112, 0.4);
+  --decorated-zone-color: var(--accent-color);
+  --button-active: #ff0070;
+  --title-decor-color: #000028;
+  --menu-button-color: #ff0070;
+  --title-no-decor-color: #ff0070;
+  --visability: visible;
 }
 
 @media (min-width: 768px) {
@@ -28,5 +37,7 @@
     --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --margin-block-end: 80px;
     --margin-position-absolut: 20px;
+    --header-rec-top: 20px;
+    --header-rec-right: 48px;
   }
 }
